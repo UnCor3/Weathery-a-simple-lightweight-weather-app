@@ -1,0 +1,50 @@
+nav {
+  width: 100vw;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.brand {
+  font-size: 150%;
+}
+
+.left {
+  display: flex;
+  flex: 1;
+  padding-left: 1rem;
+}
+
+.right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+@media all and (min-width: 769px) {
+  nav {
+    height: 75px;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .left {
+    padding-left: 1.5rem;
+  }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1439px) {
+  .left {
+    padding-left: 2rem;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .left {
+    padding-left: 2.3rem;
+  }
+}

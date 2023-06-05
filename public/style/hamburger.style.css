@@ -1,0 +1,17 @@
+.hamburger-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+}
+
+@media all and (min-width: 769px) {
+  .hamburger-container {
+    display: none;
+  }
+}

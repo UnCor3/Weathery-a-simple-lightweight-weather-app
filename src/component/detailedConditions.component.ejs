@@ -1,0 +1,30 @@
+<div class="detailed-con">
+  <div class="title">
+    <h2>More Information</h2>
+  </div>
+
+  <div class="wind-speed">
+    <input checked type="checkbox" name="speed-type" id="speed-type" />
+    <div class="speed speed-type-kmh active">
+      Wind Speed : <%= data.current.wind_kph %>
+      <span class="selected-speed">kph</span>/
+      <label for="speed-type">mph</label>
+    </div>
+    <div class="speed speed-type-mph">
+      Wind Speed : <%= data.current.wind_mph %>
+      <span class="selected-speed">mph</span>/
+      <label for="speed-type">kmh</label>
+    </div>
+  </div>
+  <div class="wind-deg">
+    Wind Degree: <span class="value"> <%= data.current.wind_degree %>° </span>
+  </div>
+  <div class="wind-dir">
+    Wind Direction:
+    <span class="value"> <%= data.current.wind_dir %> </span>
+  </div>
+  <div class="pressure">
+    Pressure :
+    <span class="value"> <%= data.current.pressure_mb %> </span>
+  </div>
+</div>

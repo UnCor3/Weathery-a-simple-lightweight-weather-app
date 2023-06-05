@@ -1,0 +1,46 @@
+<div class="weather-wrapper">
+  <div class="title">Current weather</div>
+  <hr />
+  <div class="weather">
+    <div class="country-det">
+      <%= data.location.country %> / <%= data.location.name %>
+    </div>
+    <div class="temp">
+      <input checked type="checkbox" name="temp-type" id="temp-type" />
+      <div class="image-desc">
+        <div>
+          <img
+            src="<%= data.current.condition.icon %>"
+            alt="<%= data.current.condition.text %>"
+          />
+        </div>
+        <div class="con-text"><%= data.current.condition.text %></div>
+      </div>
+      <div class="unit temp-c active">
+        <%= data.current.temp_c %>°C /
+        <label for="temp-type" class="temp-choise">°F</label>
+      </div>
+
+      <div class="unit temp-f">
+        <%= data.current.temp_f %>°F /
+        <label for="temp-type" class="temp-choise">°C</label>
+      </div>
+    </div>
+    <div class="condition">
+      <div class="felt-temp">
+        <input checked type="checkbox" name="felt-temp" id="felt-temp" />
+        <div class="f-temp f-temp-c active">
+          Felt temp : <%= data.current.feelslike_c %> °C /
+          <label for="felt-temp">°F</label>
+        </div>
+
+        <div class="f-temp f-temp-f">
+          Felt temp : <%= data.current.feelslike_f %> °F /
+          <label for="felt-temp">°C</label>
+        </div>
+      </div>
+
+      <div class="humidity">Humidity : <%= data.current.humidity %> %</div>
+    </div>
+  </div>
+</div>

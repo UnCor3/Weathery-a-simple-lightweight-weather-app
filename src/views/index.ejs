@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/root.style.css" />
+    <link rel="stylesheet" href="/style/hamburger.style.css" />
+    <link rel="stylesheet" href="/style/navbar.style.css" />
+    <link rel="stylesheet" href="/style/sidebar.style.css" />
+    <link rel="stylesheet" href="/style/index.style.css" />
+    <link rel="stylesheet" href="/style/featured.style.css" />
+    <link rel="stylesheet" href="/style/footer.style.css" />
+    <title>Weathery</title>
+  </head>
+  <body>
+    <div class="page-content">
+      <!-- Header -->
+      <header><%- include('../component/navbar.component.ejs') %></header>
+      <!-- Section -->
+      <section>
+        <%- include('../component/search-box.component.ejs') %>
+        <p>
+          Welcome to Weathery , this is a simple ejs app to learn about weather
+          in your place simply you can use the search box for your place this
+          site uses weatherapi's api you can check it out <a href="">here</a>
+        </p>
+        <h2>Here are some featured places</h2>
+        <div class="featured-places">
+          <% featuredPlaces.forEach(place => { %> <%-
+          include('../component/featured.component.ejs',{ place }) %> <% }) %>
+        </div>
+      </section>
+      <!-- Sidebar -->
+      <%- include('../component/sidebar.component.ejs') %>
+      <!-- Footer -->
+      <%- include('../component/footer.component.ejs') %>
+    </div>
+    <script src="/script/index.js"></script>
+    <script src="/script/hamburger.js"></script>
+    <script src="/script/sidebar.js"></script>
+  </body>
+</html>

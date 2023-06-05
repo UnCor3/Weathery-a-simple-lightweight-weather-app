@@ -1,0 +1,167 @@
+.page-content {
+  display: flex !important;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+section {
+  flex: 1;
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: 95vw;
+}
+
+section p {
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  line-height: 150%;
+}
+
+input.search {
+  width: 100%;
+  padding: 0.4rem;
+  border: none;
+  outline: none;
+  font-size: 120%;
+}
+
+input.search::placeholder {
+  font-weight: bolder;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  top: 116px;
+  background-color: black;
+  color: white;
+  width: 95vw;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  transform: translateX(-1px);
+}
+
+.search-results:hover {
+  display: flex;
+}
+
+.search-box {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  padding: 0.4rem 0;
+  margin-bottom: 2rem;
+}
+
+.search-box:focus-within + .search-results {
+  display: flex;
+}
+
+.search-icon {
+  width: 20px;
+  aspect-ratio: 1;
+  margin-right: 10px;
+  border: none;
+}
+
+div.error {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span.error-mes {
+  font-size: 110%;
+}
+
+section h2 {
+  color: black;
+}
+
+@media all and (min-width: 768px) {
+  .featured-places {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+  .search-box {
+    width: 85vw;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .search-results {
+    width: 85vw;
+  }
+
+  .featured-places {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  span.error-mes {
+    font-size: 130%;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .search-box {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .search-results {
+    width: 700px;
+    top: 140px;
+  }
+
+  .featured {
+    flex: 1;
+    margin: 0 auto;
+  }
+
+  span.error-mes {
+    font-size: 150%;
+  }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1439px) {
+  .search-box {
+    width: 750px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .search-results {
+    width: 750px;
+    top: 140px;
+  }
+
+  span.error-mes {
+    font-size: 180%;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .search-box {
+    width: 850px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .search-results {
+    width: 850px;
+    top: 140px;
+  }
+
+  span.error-mes {
+    font-size: 230%;
+  }
+}

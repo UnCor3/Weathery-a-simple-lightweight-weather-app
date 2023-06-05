@@ -1,0 +1,65 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background: #000;
+  gap: 200px;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  left: 100vw;
+  transition: all 300ms ease-in-out;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-top: 1.5rem;
+  padding-right: 0.7rem;
+  color: white;
+}
+
+.sidebar svg {
+  fill: white;
+  width: 60px;
+  aspect-ratio: 1;
+}
+
+.sidebar.active {
+  position: fixed;
+  left: 0;
+}
+
+.sidebar-toggler {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-content .github {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-toggler .bar {
+  width: 35px;
+  height: 5px;
+  background: white;
+}
+
+.sidebar-content {
+  display: flex;
+}
+
+.sidebar-toggler .bar:nth-child(1) {
+  transform: rotateZ(45deg);
+}
+
+.sidebar-toggler .bar:nth-child(2) {
+  position: absolute;
+  transform: rotateZ(135deg);
+}
+
+@media all and (min-width: 769px) {
+  .sidebar {
+    display: none;
+  }
+}

@@ -1,0 +1,78 @@
+.detailed-con {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detailed-con .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailed-con .value {
+  font-weight: bolder;
+}
+
+.wind-speed input {
+  display: none;
+}
+
+.selected-speed {
+  font-weight: bolder;
+}
+
+label[for="speed-type"] {
+  color: grey;
+}
+
+.speed {
+  display: none;
+}
+
+.speed-type-kmh.active {
+  display: block;
+}
+
+.speed-type-mph.active {
+  display: block;
+}
+
+.speed label:hover {
+  color: black;
+}
+
+.con-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.temp div {
+  width: 50%;
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+  .detailed-con {
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .detailed-con {
+    font-size: 1.4rem;
+  }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1439px) {
+  .detailed-con {
+    font-size: 1.4rem;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .detailed-con {
+    font-size: 1.4rem;
+  }
+}

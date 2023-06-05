@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/root.style.css" />
+    <link rel="stylesheet" href="/style/hamburger.style.css" />
+    <link rel="stylesheet" href="/style/navbar.style.css" />
+    <link rel="stylesheet" href="/style/sidebar.style.css" />
+    <link rel="stylesheet" href="/style/weather.style.css" />
+    <link rel="stylesheet" href="/style/detailedConditions.style.css" />
+    <link rel="stylesheet" href="/style/index.style.css" />
+    <link rel="stylesheet" href="/style/footer.style.css" />
+    <title><%= data.location.name %> - Weathery</title>
+  </head>
+  <body>
+    <div class="page-content">
+      <!-- Header -->
+      <header><%- include('../component/navbar.component.ejs') %></header>
+      <!-- Weather -->
+      <div class="weather-container">
+        <%- include('../component/weather.component.ejs',{ data}) %> <%-
+        include('../component/detailedConditions.component.ejs',{ data }) %>
+      </div>
+      <!-- Sidebar -->
+      <%- include('../component/sidebar.component.ejs') %> 
+      <!-- Footer -->
+      <%- include('../component/footer.component.ejs') %>
+    </div>
+    <script src="/script/hamburger.js"></script>
+    <script src="/script/sidebar.js"></script>
+    <script src="/script/weather.js"></script>
+    <script src="/script/detailedConditions.js"></script>
+  </body>
+</html>

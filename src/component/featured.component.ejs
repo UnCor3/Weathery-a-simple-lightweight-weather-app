@@ -1,0 +1,30 @@
+<div class="featured" onclick="goToWeatherPage('<%= place.location.name %>')">
+  <div class="featured-name">
+    <%= place.location.country %> / <%= place.location.name %>
+  </div>
+  <div class="featured-con">
+    <div>
+      <div><%= place.current.condition.text %></div>
+    </div>
+    <div>
+      <img
+        src="<%= place.current.condition.icon %>"
+        alt="<%= place.current.condition.text %>"
+        width="60"
+        height="60"
+      />
+    </div>
+  </div>
+  <div class="other-info">
+    <div class="featured-temp">
+      Temp : <%= place.current.temp_c %> °C / <%= place.current.temp_f %> °F
+    </div>
+    <div class="humidity">Humidity : <%= place.current.humidity %>%</div>
+  </div>
+</div>
+
+<script>
+  function goToWeatherPage(href) {
+    document.location.href = `http://${HOST}:${PORT}/w/${href.toLowerCase()}`;
+  }
+</script>

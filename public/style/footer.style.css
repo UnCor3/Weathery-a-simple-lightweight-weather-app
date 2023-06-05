@@ -1,0 +1,58 @@
+footer {
+  height: 200px;
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 1.3rem 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  align-items: start;
+  justify-content: start;
+}
+
+.github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials svg {
+  fill: white;
+  height: 20px;
+  aspect-ratio: 1;
+}
+
+.api {
+  display: flex;
+  flex: 1;
+  align-items: start;
+  justify-content: start;
+}
+
+.api img {
+  object-fit: contain;
+}
+
+@media all and (min-width: 769px) {
+  footer {
+    height: 150px;
+    justify-content: unset;
+  }
+
+  .socials {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .api {
+    align-items: center;
+    justify-content: center;
+  }
+}
