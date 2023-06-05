@@ -29,10 +29,13 @@ Here are some screenshots from the web app.
 <img src="public/img/ss_1.png" alt="Image Description" width="400">
 <img src="public/img/ss_2.png" alt="Image Description" width="400">
 <img src="public/img/ss_3.png" alt="Image Description" width="400">
-<img src="public/img/ss_4.png" alt="Image Description">
-<img src="public/img/ss_5.png" alt="Image Description">
+
 </div>
 
+<div>
+<img src="public/img/ss_4.png" alt="Image Description" height="400" width="200">
+<img src="public/img/ss_5.png" alt="Image Description" height="400" width="200" >
+</div>
 
 Any support would be appreciated,thank you for your interest 
 
