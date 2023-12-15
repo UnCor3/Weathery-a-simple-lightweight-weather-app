@@ -1,4 +1,4 @@
-<div class="featured" onclick="goToWeatherPage('<%= place.location.name %>')">
+<a class="featured" href="/w/<%= place.location.name %>">
   <div class="featured-name">
     <%= place.location.country %> / <%= place.location.name %>
   </div>
@@ -21,10 +21,4 @@
     </div>
     <div class="humidity">Humidity : <%= place.current.humidity %>%</div>
   </div>
-</div>
-
-<script>
-  function goToWeatherPage(href) {
-    document.location.href = `http://${HOST}:${PORT}/w/${href.toLowerCase()}`;
-  }
-</script>
+</a>

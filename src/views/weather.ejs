@@ -18,13 +18,14 @@
     <div class="page-content">
       <!-- Header -->
       <header><%- include('../component/navbar.component.ejs') %></header>
+      <%- include('../component/search-box.component.ejs') %>
       <!-- Weather -->
       <div class="weather-container">
         <%- include('../component/weather.component.ejs',{ data}) %> <%-
         include('../component/detailedConditions.component.ejs',{ data }) %>
       </div>
       <!-- Sidebar -->
-      <%- include('../component/sidebar.component.ejs') %> 
+      <%- include('../component/sidebar.component.ejs') %>
       <!-- Footer -->
       <%- include('../component/footer.component.ejs') %>
     </div>
@@ -32,5 +33,6 @@
     <script src="/script/sidebar.js"></script>
     <script src="/script/weather.js"></script>
     <script src="/script/detailedConditions.js"></script>
+    <script src="/script/index.js"></script>
   </body>
 </html>

@@ -1,11 +1,16 @@
 footer {
-  height: 200px;
   background-color: black;
   color: white;
+}
+
+.footer-container {
+  max-width: 1600px;
   display: flex;
   padding: 1.3rem 3rem;
   display: flex;
   justify-content: space-between;
+  height: 200px;
+  margin: auto;
 }
 
 .socials {
@@ -41,7 +46,7 @@ footer {
 }
 
 @media all and (min-width: 769px) {
-  footer {
+  .footer-container {
     height: 150px;
     justify-content: unset;
   }

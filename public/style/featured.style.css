@@ -24,15 +24,6 @@
   width: 40%;
 }
 
-.featured-places {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 1rem 0;
-  padding-top: 0.4rem;
-  color: white;
-}
-
 .featured {
   background: #000;
   padding: 0.5rem;

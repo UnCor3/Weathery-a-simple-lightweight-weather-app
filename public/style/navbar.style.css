@@ -1,10 +1,16 @@
-nav {
+.navbar-wrapper {
   width: 100vw;
-  height: 50px;
   background-color: black;
+  color: white;
+}
+
+.navbar-container {
   display: flex;
   align-items: center;
-  color: white;
+  justify-content: center;
+  height: 50px;
+  max-width: 1500px;
+  margin: auto;
 }
 
 .brand {
@@ -25,8 +31,9 @@ nav {
   padding-right: 1rem;
 }
 
+/* //TODO */
 @media all and (min-width: 769px) {
-  nav {
+  .navbar-container {
     height: 75px;
   }
 }
